@@ -1,9 +1,3 @@
-<?php
-
-    session_start()
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,8 +7,15 @@
     <title>Formulário de inscrição</title>
 </head>
 <body>
+    <h2>Navegação</h2>
+    <ul>
+        <li><a href='contato.php'>CONTATO</a></li>
+        <li><a href='produtos.php'>PRODUTOS</a></li>
+        <li><a href='sobre.php'>SOBRE</a></li>
+        <li><a href='home.php'>HOME</a></li>
+    </ul>
     <h2>Formulário para inscrição de competidores</h2>
-    <form action='script.php' method='post'>
+    <form action='index2.php' method='post'>
         <?php
             $messagemDeErro = isset($_SESSION['erro-nome']) ? $_SESSION['erro-nome'] : '';
             if(!empty($messagemDeErro)){
